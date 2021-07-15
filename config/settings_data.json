@@ -1,5 +1,8 @@
 {
   "current": {
+    "colors_solid_button_labels": "#f1b4b4",
+    "colors_accent_1": "#b46363",
+    "checkout_header_image": "shopify:\/\/shop_images\/woman-and-two-children-stand-in-a-gold-colored-field.jpg",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",

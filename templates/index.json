@@ -26,8 +26,9 @@
         "button"
       ],
       "settings": {
-        "desktop_text_box_position": "flex-end",
-        "color_scheme": "background-1",
+        "image": "shopify:\/\/shop_images\/woman-and-two-children-stand-in-a-gold-colored-field.jpg",
+        "desktop_text_box_position": "center",
+        "color_scheme": "background-2",
         "stack_images_on_mobile": true,
         "adapt_height_first_image": false
       }
@@ -38,7 +39,7 @@
         "title": "Here are some products",
         "collection": "",
         "products_to_show": 4,
-        "show_view_all": true,
+        "show_view_all": false,
         "swipe_on_mobile": false,
         "image_ratio": "adapt",
         "show_secondary_image": false,

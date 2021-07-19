@@ -10,9 +10,9 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "THIS IS THING",
-              "color_scheme": "accent-1",
-              "link": ""
+              "text": "Limited edition bread and butter pickles! Pre-order now!",
+              "color_scheme": "inverse",
+              "link": "shopify:\/\/pages\/pre-order"
             }
           }
         },

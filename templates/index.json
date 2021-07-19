@@ -35,6 +35,7 @@
     },
     "featured_products": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "collection": "frontpage",
@@ -88,29 +89,36 @@
         "16267048053b98f7e1-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "pickles"
           }
         },
         "16267048053b98f7e1-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "frontpage"
           }
         },
         "16267048053b98f7e1-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "rare"
+          }
+        },
+        "beeb07aa-9a18-4b6e-8c4f-abae028258c9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "merch"
           }
         }
       },
       "block_order": [
         "16267048053b98f7e1-0",
         "16267048053b98f7e1-1",
-        "16267048053b98f7e1-2"
+        "16267048053b98f7e1-2",
+        "beeb07aa-9a18-4b6e-8c4f-abae028258c9"
       ],
       "settings": {
-        "title": "Collections",
+        "title": "",
         "image_ratio": "square",
         "color_scheme": "background-2",
         "swipe_on_mobile": false,

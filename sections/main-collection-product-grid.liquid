@@ -1,3 +1,4 @@
+<!-- LOAD CSS -->
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 
@@ -10,9 +11,11 @@
 <noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-badge.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+<!-- END LOAD CSS -->
 
 {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
 
+<!-- Filter and sort (this will be replaced with our buttons) -->
 <div class="page-width collection-filters" id="main-collection-filters" data-id="{{ section.id }}">
   {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
     {%- assign total_active_values = 0 -%}
@@ -397,8 +400,10 @@
   {%- endif -%}
 </div>
 
+<!-- I don't know what this is yet. -->
 <script src="{{ 'collection-filters-form.js' | asset_url }}" defer="defer"></script>
 
+<!-- This is the grid of product cards that forms the bulk of the PDP -->
 <div id="CollectionProductGrid">
   {%- paginate collection.products by section.settings.products_per_page -%}
     {%- if collection.products.size == 0 -%}
@@ -411,9 +416,9 @@
           </div>
         </div>
 
-        <p class="collection-product-count light" role="status">
+        <!-- <p class="collection-product-count light" role="status">
           {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
-        </p>
+        </p> -->
 
         <div class="title-wrapper center">
           <h2 class="title title--primary">
@@ -432,9 +437,9 @@
           </div>
         </div>
 
-        <p class="collection-product-count light" role="status">
+        <!-- <p class="collection-product-count light" role="status">
           {{ 'sections.collection_template.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
-        </p>
+        </p> -->
 
         <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="
           grid grid--2-col
@@ -443,6 +448,9 @@
           {% endif %} negative-margin">
           {%- for product in collection.products -%}
             <li class="grid__item">
+              <script>
+                console.log( `hi`, {{ product | json }} );
+              </script>
               {% render 'product-card',
                 product_card_product: product,
                 media_size: section.settings.image_ratio,
@@ -462,6 +470,7 @@
   {%- endpaginate -%}
 </div>
 
+<!-- "schema" determines what settings are adjustable from the theme editor -->
 {% schema %}
 {
   "name": "t:sections.main-collection-product-grid.name",

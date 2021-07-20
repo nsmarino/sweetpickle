@@ -449,7 +449,7 @@
           {%- for product in collection.products -%}
             <li class="grid__item">
               <script>
-                console.log( `hi`, {{ product | json }} );
+                console.log( {{ product.metafields.custom_fields.subtitle | json }} );
               </script>
               {% render 'product-card',
                 product_card_product: product,

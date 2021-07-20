@@ -1,7 +1,11 @@
 {
   "current": {
-    "colors_solid_button_labels": "#f1b4b4",
-    "colors_accent_1": "#b46363",
+    "colors_solid_button_labels": "#069648",
+    "colors_accent_1": "#f4f4f4",
+    "colors_text": "#018136",
+    "colors_background_2": "#f4f4f4",
+    "type_header_font": "serif",
+    "type_body_font": "mono",
     "checkout_header_image": "shopify:\/\/shop_images\/woman-and-two-children-stand-in-a-gold-colored-field.jpg",
     "sections": {
       "announcement-bar": {
